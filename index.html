@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>向我付款</title>
+<style>
+body{font-family:-apple-system,'Microsoft YaHei',sans-serif;margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#f4f6f9;color:#1f2430}
+.card{background:#fff;border-radius:16px;box-shadow:0 4px 24px rgba(16,24,40,.08);padding:32px 24px;text-align:center;max-width:420px;margin:16px}
+h1{font-size:20px;margin:0 0 6px}
+p.tip{color:#6b7280;font-size:13px;margin:0 0 20px}
+.opts{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+a.btn{display:block;padding:12px 24px;border-radius:10px;color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+a.wx{background:#07c160}a.zfb{background:#1677ff}
+.qrs{display:flex;gap:20px;justify-content:center;margin-top:24px;flex-wrap:wrap}
+.qr{font-size:12px;color:#6b7280}
+.qr img{width:140px;height:140px;display:block;margin-bottom:6px;border:1px solid #e4e8ef;border-radius:8px;padding:8px;background:#fff}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>向我付款</h1>
+<p class="tip">正在为你打开对应的支付方式…</p>
+<div class="opts">
+<a class="btn wx" href="https://payapp.wechatpay.cn/sjt/qr/AQEGU3plxgiDSMIRF45SX8Vu">微信支付</a>
+<a class="btn zfb" href="https://qr.alipay.com/2m615056qbhmtbkaaihoj7e">支付宝</a>
+</div>
+<div class="qrs">
+<div class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYAQMAAAC9QHvPAAAABlBMVEX///8AAABVwtN+AAADIElEQVR4nOyZwRGrOBBEW8VBxwmBTFBiLsDlxEQmhKCjDi71VgtjavdvAMOu5aPfZVBr1NPCb/3Wb/3bGkhyj5m5BrZIZiMbYK/+h09mB+Iec0011QmTkRtXhDIUYPDKkHGPrIkZoU7GAmudWfjyzCDFXBE3bmVCIEvg67/AVETWUAOlr1Bg9M1IYwBzJFlhLJM9ueIPHTpi+lmu0s8UtzrZJqbMf573ezHHryJmSEPai1AC2/cvlwx37VTMcatJtRRpfjWWh1dmIEaABGrgRpakr2xPvrHw7ZMR0etivw20C6nMmI1l+OrnhozORRWXY5buEZhtxdJ3a/DKYDzu5bj1HnV4iaAOdarMG4Ox6iSzJqmoq2zCQlU2cL0vM7COOvE1YYrsfiOV2Z58fSv3x+wYMZKUwuR8JsglPMvDrvvCHVO75uV/MMVsWwEWPkmu9vLJSD+A+iV7Bzor032A4c5MlEySnGhNbJiQuEL+Z7U3XDL63Iezke4/FbXzNO9OmdpPRefSh1utGfm+6rojIzfBTEo58tjcyozwj+/jisGo/sOMpMmg++dUwmf+ok/m+IZVlR0+oZkSh2YrHhh8Mr23yCEwNrkJNpP/0Z68783IZ8ojyTkfPoEswN/6qi/mzH+QuB3K7/550Y1bAJfMUVdNFex3QZ/fV8xYCq57+X7MQM1W/baQ11dlW1nI8rC3X4ZySZpzEVs85twnGx7XNOyPiT1nY47tmL80v2sOtstLuGOOCfacGm3rda3aibLst2U+aUquoBLNxK3vhToQvzOaQ6aip89y/Nk06ar3rBjOzNMhMyrv06zLjMnkoGdrIspyY2bkkbQpP+w3mE5yUeJAr8ywq7eQUE4i/yMFte6f3TKfk5GhjE0+U28q8qIrHmeP8sZ88nD0PFz+OSOUWe+D5WHrjZnP+0WkZvM+WykZ1F5cea87Ru9E2jFlDtI8QlmKXrAuL+GSIaPerbYK6A1R5+JtL96fUa41qUsplbC1vzUOlw/3xkjPUfN7fzc/XBubva75yx3T+0889HPOwnITQ1lOL+GN+a3f+l+tvwYA4S+FjH6AYbwAAAAASUVORK5CYII=" alt="微信收款码">微信扫码</div>
+<div class="qr"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYAQMAAAC9QHvPAAAABlBMVEX///8AAABVwtN+AAACkklEQVR4nOyZPW70OgxFr+HCpZegnThb9+xES3DpQvB9OLQ0CYJUrzI/jBAkmdFpaJKXP9bnfM7n/N8z2fa11Nkve/a12IdU5uOLiz0vc0rasGtfzE21X64+NklrZqbcNmiTZsz2MbnOx7a4PZrBrkulrT4L0Vab/g3GPr5OzQRl91J6JmyofEAJztLWS/ozVlMxXTfa+joLETr++0NbnsL0E1/WyK+27ovbuEjMNG1xI4U1dxYdE5K+p2UmV34ZV0n6sonNMh+6K+tjGTTB+1J9TAhDWDj57bSUDIVml2yUwD7DX4UL+cjL3MmCQyTqDmZeNAKbyo9YzcfcAqjZr/MuNI2AndHwpzITRd+O2hm9DeBCb4P+KS9zlkbMoeGeD8IyXIVIj5OSsSPmaF7iKVCgmBCGgjySqbersFD4q5ErCIOcmCG/6Nno1EqIW1uj9doXZ2bIL/5Smyj6i/t0NJ1Kzrwrkhq5gx5Wvq1an8nENDCaBUS7RHsvAs3Oy+AWJoZem172u/X5oeEJmb70CN1gbOg0IvhURmPOjB/ikJ2Mo5NuysvETB3FKGrlLXhI3/fWICUTdShSi1I6+h8y7d4fZGXwH58ppbTX8QAIWJ96KtOHaDo1thpsBJADPPfuf5IyoRFUJLMHiNan2C9auLxMqOCFg+5BjUrb3VnaQ5mRQJ02w0H4K6pLXmbqSsAAIarmHYxsdWtb8zLd9ngFEtdjdtDizEzo8zVWh7G3GTJS3/ufpzHk0saUE+8Hd5V3UbWUmYl9WSQQ10tF0QpP5LuepmUoperNAhMDmr1U/XoH9CxGRYqFBi8J8WEsZnIzkTu9gLI1wKTaewflZbpuREKRX6K5Gy+r8zKf8zmf8+v8NwCvPS33vKzj/wAAAABJRU5ErkJggg==" alt="支付宝收款码">支付宝扫码</div>
+</div>
+</div>
+<script>
+var ua=navigator.userAgent||"";
+var wxUrl="https://payapp.wechatpay.cn/sjt/qr/AQEGU3plxgiDSMIRF45SX8Vu", zfbUrl="https://qr.alipay.com/2m615056qbhmtbkaaihoj7e";
+if(/MicroMessenger/i.test(ua)){location.replace(wxUrl)}
+else if(/AlipayClient/i.test(ua)){location.replace(zfbUrl)}
+</script>
+</body>
+</html>
